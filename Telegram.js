@@ -32,7 +32,7 @@ function sendMessage(
 ) {
     let method = 'sendMessage';
     let options = {
-        chat_id: chat_id,
+        chat_id: String(chat_id),
         text: text,
         parse_mode: parse_mode,
         entities: entities,
@@ -78,7 +78,7 @@ function copyMessage(
 ) {
     let method = 'copyMessage';
     let options = {
-        chat_id: chat_id,
+        chat_id: String(chat_id),
         from_chat_id: from_chat_id,
         message_id: message_id,
         caption: caption,
@@ -118,7 +118,7 @@ function sendPhoto(
 ) {
     let method = 'sendPhoto'
     let options = {
-        chat_id: chat_id,
+        chat_id: String(chat_id),
         photo: photo,
         caption: caption,
         parse_mode: parse_mode,
@@ -165,7 +165,7 @@ function sendAudio(
 ) {
     let method = 'sendAudio'
     let options = {
-        chat_id: chat_id,
+        chat_id: String(chat_id),
         audio: audio,
         caption: caption,
         parse_mode: parse_mode,
